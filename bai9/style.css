@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EEF5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Thẻ hồ sơ nền #FFFFFF, bóng đổ, bố cục 2 cột (280px + 1fr) */
+.profile-card {
+    width: 820px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    overflow: hidden;
+}
+
+/* --- CỘT TRÁI --- */
+.left-col {
+    background: linear-gradient(to bottom, #1565C0, #0d3f7a);
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ảnh đại diện vẽ hoàn toàn bằng CSS */
+.avatar-circle {
+    width: 110px;
+    height: 110px;
+    background-color: #FFFFFF;
+    color: #1565C0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.user-role {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+/* Thông tin liên hệ căn trái */
+.contact-info {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 2;
+    padding-left: 10px;
+}
+
+.contact-info p {
+    word-break: break-all;
+}
+
+/* --- CỘT PHẢI --- */
+.right-col {
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.info-group {
+    width: 100%;
+}
+
+/* Tiêu đề mục màu #1565C0, có gạch chân mờ bên dưới */
+.section-title {
+    color: #1565C0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 12px;
+}
+
+.intro-text, .edu-text {
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* Danh sách Kỹ năng hiển thị dạng Chip bo tròn */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-chip {
+    background-color: #e3f0ff;
+    color: #0d3f7a;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Danh sách Liên kết */
+.links-group {
+    font-size: 14px;
+}
+
+.links-group a {
+    color: #1565C0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links-group a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.digital-clock {
+    background-color: #000000;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.digital-clock img {
+    height: 52px;
+}
+
+.greeting {
+    background-color: #FFFFFF;
+    color: #c62828;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

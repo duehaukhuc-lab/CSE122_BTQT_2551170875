@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2E2E2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333333;
+    padding: 30px 10px;
+}
+
+/* Khung trắng bao ngoài toàn bộ thẻ */
+.card {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. Dải tiêu đề chính: Nền đỏ #C8102E, chữ trắng #FFFFFF, căn giữa */
+.main-title {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* 2. Dải tiêu đề phụ: Nền hồng #FBE3E8, chữ đỏ #C8102E, in đậm, căn giữa */
+.sub-title {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 0;
+}
+
+/* Khung nội dung bên trong có padding lề chuẩn xung quanh */
+.card-body {
+    padding: 25px 35px 35px 35px;
+}
+
+/* --- CHIA BỐ CỤC 2 CỘT BẰNG FLEXBOX --- */
+
+/* Hàng trên */
+.row-top {
+    display: flex;
+}
+
+.col-top-left {
+    width: 50%;
+}
+
+/* Cột trên - bên phải: Có vạch kẻ dọc (border-left) ở bên trái */
+.col-top-right {
+    width: 50%;
+    border-left: 1px solid #D0D0D0; /* VẠCH PHÂN CỘT DỌC GIỮA 2 MỤC */
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+/* Hàng dưới */
+.row-bottom {
+    display: flex;
+}
+
+/* Cột dưới - bên trái: Chứa Cách thức nhận giải */
+.col-bottom-left {
+    width: 50%;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.col-bottom-right {
+    width: 50%;
+}
+
+/* --- ĐỊNH DẠNG NỘI DUNG & CHỮ --- */
+
+/* Tiêu đề mục đỏ #C8102E + Ký hiệu ô vuông rỗng □ */
+.section-title {
+    color: #C8102E;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.section-title::before {
+    content: "□ ";
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+/* Ảnh sản phẩm góc phải trên dùng float: right */
+.product-img {
+    float: right;
+    width: 145px;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Danh sách gạch đầu dòng đen */
+.sub-list {
+    list-style-type: disc;
+    color: #333333;
+    padding-left: 18px;
+    margin-bottom: 15px;
+}
+
+.sub-list li {
+    line-height: 1.55;
+    margin-bottom: 6px;
+    text-align: justify;
+}

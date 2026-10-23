@@ -1,0 +1,29 @@
+.container{
+    background-color: #FFFDE7;
+    border:2px solid #9E9E9E;
+    max-width: 600px;
+    width:80%;
+    margin:20px auto;
+    text-align: center;
+}
+
+.title{
+    background-color:#FFD9E6 ;
+    color:#F40000;
+}
+
+.poem_1-3{
+    color: #0033CC;
+    font-style: italic;
+}
+
+.poem_2{
+    color:#D40000;
+    font-style: italic;
+}
+
+.driver{
+    width: 55%;
+    margin: 15px auto;
+    color:#0033CC;
+}

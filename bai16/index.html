@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 16 — Danh sách việc cần làm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-card">
+        <div class="todo-header">
+            <h2>Danh sách việc cần làm</h2>
+            <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+        </div>
+
+        <div class="todo-body">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Nhập công việc cần làm...">
+                <button id="add-btn" onclick="addTodo()">Thêm</button>
+            </div>
+
+            <ul id="todo-list" class="todo-list"></ul>
+
+            <div class="todo-footer">
+                <span id="remaining-count">Còn 0 việc chưa hoàn thành</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+.container{
+    background: linear-gradient(to bottom, #C9A227, #A8861B);
+    color: #FFFFFF;
+    text-align: center;
+    width:800px;
+    margin: 30px auto;
+    padding: 30px;
+    overflow:hidden;
+}
+
+.title{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+img{
+    float:right;
+    border: 3px solid #FFFFFF;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.content{
+    text-align: justify;
+}

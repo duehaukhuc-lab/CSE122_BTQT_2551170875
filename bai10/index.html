@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10 - Form liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-card">
+        <div class="form-header">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </div>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" id="phone" name="phone" >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Chủ đề</label>
+                    <select id="subject" name="subject">
+                        <option value="khoahoc" selected>Hỏi về khoá học</option>
+                        <option value="baitap">Hỏi về bài tập</option>
+                        <option value="gop-y">Góp ý hệ thống</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Hàng 3: Nội dung dài -->
+            <div class="form-group full-width">
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <!-- Khối Checkbox đồng ý: Ô tích ở giữa, Nhãn text đẩy sang bên phải -->
+            <div class="checkbox-container">
+                <div class="checkbox-center">
+                    <input type="checkbox" id="agree" name="agree" checked>
+                </div>
+                <div class="checkbox-label-right">
+                    <label for="agree">Tôi đồng ý nhận email<br>phản hồi.</label>
+                </div>
+            </div>
+
+            <!-- Nút gửi và nhập lại -->
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Gửi liên hệ</button>
+                <button type="reset" class="btn btn-reset">Nhập lại</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

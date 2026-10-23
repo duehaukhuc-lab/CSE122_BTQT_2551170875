@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:20px 0;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width:700px;
+    margin:0 auto;
+    padding:10px;
+}
+
+.title{
+    color: #1565C0;
+    text-align: center;
+    margin:0;
+}
+
+img{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.sub-title{
+    background-color:  #1565C0;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 5px 5px;
+}
+
+
+.content{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content::first-letter{
+    font-size: 35px;
+    color:  #C62828;
+    font-weight: bold;
+    float:left;
+    padding-right: 5px;
+    line-height: 1;
+}

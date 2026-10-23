@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+h2 {
+    color: #c2410c;
+    margin-bottom: 6px;
+}
+
+p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.msg {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Khi LỖI: viền đỏ + chữ đỏ */
+.error input {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+.error .msg {
+    color: #dc2626;
+}
+
+/* Khi HỢP LỆ: viền xanh + chữ xanh */
+.success input {
+    border-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+.success .msg {
+    color: #16a34a;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #c2410c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
